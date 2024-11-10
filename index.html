@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Bento grid</title>
 
@@ -16,23 +20,52 @@
 </head>
 <body>
 
-  Social Media 10x Faster with AI
-  Over 4,000 5-star reviews
+  <main>
+    <div class="grid-layout">
+      <div class="card head-card">
+        <h1 class="text-preset-1">Social Media <span class="multiplier">10x </span>Faster with AI</h1>
+        <div class="review">
+          <img src="./assets/images/illustration-five-stars.webp" alt="stars">
+          <p class="text-preset-4">Over 4,000 5-star reviews</p>
+        </div>
+      </div>
+      <div class="card manage-card">
+        <img src="./assets/images/illustration-multiple-platforms.webp" alt="">
+        <h2 class="text-preset-3">Manage multiple <br> accounts and platforms.</h2>
+      </div>
+      <div class="card schedule-card">
+        <h2>Maintain a consistent posting schedule.</h2>
+        <img src="./assets/images/illustration-consistent-schedule.webp" alt="calender">
+      </div>
+      <div class="card social-media-card">
+        <h2 class="text-preset-3">Schedule to social media.</h2>
+        <img src="./assets/images/illustration-schedule-posts.webp" alt="">
+        <p class="text-preset-4">Optimize post timings to publish content at the perfect time for your audience.</p>
+      </div>
+      
+      <div class="card followers-card">
+        <img src="./assets/images/illustration-grow-followers.webp" alt="">
+        <h2 class="text-preset-2">Grow followers with non-stop content.</h2>
+      </div>
 
-  Manage multiple accounts and platforms.
-
-  Maintain a consistent posting schedule.
-
-  Schedule to social media.
-  Optimize post timings to publish content at the perfect time for your audience.
-  
-  Grow followers with non-stop content.
-
-  >56% faster audience growth
-  
-  Create and schedule content quicker.
-
-  Write your content using AI.
+      <div class="card audience-card">
+        <div class="audience-growth">
+        <h2>>56%</h2> 
+        <p>faster audience growth</p>
+        </div>
+        <img src="./assets/images/illustration-audience-growth.webp" alt="">
+    </div>
+      
+      <div class="card content-card">
+        <h2>Create and schedule content <span>quicker</span>.</h2>
+        <img src="./assets/images/illustration-create-post.webp" alt="">
+      </div>
+      <div class="card Ai-card">
+        <h2>Write your content using AI.</h2>
+        <img src="./assets/images/illustration-ai-content.webp" alt="">
+      </div>
+    </div>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
