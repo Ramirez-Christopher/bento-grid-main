@@ -141,7 +141,6 @@ textarea:not([rows]) {
     gap: var(--spacing-300);
     color: var(--color-white);
     text-align: center;
-    justify-content: center;
 }
 
 .multiplier{
@@ -152,7 +151,6 @@ textarea:not([rows]) {
 .review img{
     max-width: 192px;
     justify-self: center;
-
 
 }
 .manage-card{
@@ -214,4 +212,47 @@ textarea:not([rows]) {
 
 .Ai-card img{
     max-width: 65%;
+}
+
+@media (min-width: 768px) {
+  .grid-layout {
+    grid-template-areas:
+      "header header"
+      "accounts schedule"
+      "social-media social-media"
+      "social-media social-media"
+      "audience-growth audience-growth"
+      "content Ai";
+  }
+
+  .card {
+    padding: var(--spacing-300);
+  }
+
+  .head-card {
+    padding: var(--spacing-400) var(--spacing-300);
+  }
+
+  .schedule-card img,
+  .review img {
+    max-width: 100%;
+  }
+
+  .audience-card img,
+  .content-card img,
+  .Ai-card img {
+    max-width: 75%;
+  }
+
+  .head-card{
+    grid-area: header ;
+  }
+
+  .manage-card{
+    grid-area: accounts;
+  }
+
+  .schedule-card{
+    grid-area: schedule;
+  }
 }
